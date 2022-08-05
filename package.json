@@ -31,7 +31,6 @@
     "@angular/compiler-cli": "^14.1.0",
     "@babel/core": "^7.18.10",
     "@compodoc/compodoc": "^1.1.19",
-    "@ngtools/webpack": "14.1.1",
     "@storybook/addon-actions": "^6.5.10",
     "@storybook/addon-essentials": "^6.5.10",
     "@storybook/addon-interactions": "^6.5.10",
