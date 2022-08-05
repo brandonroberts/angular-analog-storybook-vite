@@ -40,6 +40,19 @@
       "sourceRoot": "src",
       "prefix": "app",
       "architect": {
+        "storybook": {
+          "builder": "@storybook/angular:start-storybook",
+          "options": {
+            "browserTarget": "angular-vite-storybook:build",
+            "port": 6006
+          }
+        },
+        "build-storybook": {
+          "builder": "@storybook/angular:build-storybook",
+          "options": {
+            "browserTarget": "angular-vite-storybook:build"
+          }
+        },        
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {

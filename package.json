@@ -5,7 +5,10 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development"
+    "watch": "ng build --watch --configuration development",
+    "docs:json": "compodoc -p ./tsconfig.json -e json -d .",
+    "storybook": "yarn docs:json && start-storybook -p 6006",
+    "build-storybook": "yarn docs:json && build-storybook"
   },
   "private": true,
   "dependencies": {
@@ -22,9 +25,24 @@
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
+    "@analogjs/vite-plugin-angular": "^0.2.0-alpha.5",
     "@angular-devkit/build-angular": "^14.1.1",
     "@angular/cli": "~14.1.1",
     "@angular/compiler-cli": "^14.1.0",
-    "typescript": "~4.7.2"
+    "@babel/core": "^7.18.10",
+    "@compodoc/compodoc": "^1.1.19",
+    "@ngtools/webpack": "14.1.1",
+    "@storybook/addon-actions": "^6.5.10",
+    "@storybook/addon-essentials": "^6.5.10",
+    "@storybook/addon-interactions": "^6.5.10",
+    "@storybook/addon-links": "^6.5.10",
+    "@storybook/angular": "^6.5.10",
+    "@storybook/builder-vite": "^0.2.2",
+    "@storybook/builder-webpack5": "^6.5.10",
+    "@storybook/manager-webpack5": "^6.5.10",
+    "@storybook/testing-library": "^0.0.13",
+    "babel-loader": "^8.2.5",
+    "typescript": "~4.7.2",
+    "vite": "^3.0.4"
   }
 }
