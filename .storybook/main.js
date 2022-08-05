@@ -18,7 +18,7 @@ module.exports = {
   async viteFinal(config, { configType }) {
     // return the customized config
     return mergeConfig(config, {
-      // root: 'src',
+      root: 'src',
       publicDir: 'assets',
       resolve: {
         mainFields: ['module'],
